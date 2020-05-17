@@ -1,0 +1,18 @@
+{
+  "brand" : "Green paper",
+  "logo" : "logo.png",
+  "links" : [
+    {
+      "title" : "What We Do",
+      "href" : "#features"
+    },
+    {
+      "title" : "Team",
+      "href" : "#team"
+    },
+    {
+      "title" : "Contact",
+      "href" : "#contact"
+    }
+  ]
+}

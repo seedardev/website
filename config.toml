@@ -1,0 +1,4 @@
+baseURL = "https://seedar.dev"
+languageCode = "en-us"
+title = "SeedAR"
+theme = "hugo-lime"

@@ -1,0 +1,164 @@
+
+<section class="cover p-lg-5 p-md-5 p-3" style="margin-top:1px;">
+  <div class="container ">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-12 coverInfo">
+          <h1 style="font-size:50px" class="h1 text-dark">Planting the future of AR</h1>
+          <p class="text-secondary text-justify">Established in 2020, SeedAR is an IT start-up focused on providing augmented reality solutions on different platforms including web and mobile. We serve a diverse range of industries including but not limited to food and beverage, education, entertainment, and finance. 
+          </p>
+          <p class="text-secondary text-justify">At SeedAR, we strive for excellence and value being different and curious. We believe that progress comes from breaking the mould and challenging the norms.</p>
+          </p>
+          <a href="#contact" class="btn btn-success mr-3">Ping Us!</a>
+          <a href="#features" class="text-muted">Learn more...</a>
+      </div>
+      
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-right">
+          <img class="" src="{{ .Site.BaseURL }}/images/covers/logo-white.png">
+      </div>
+    </div>
+    
+  </div>
+</section>
+<section id="features" class="bg-light py-5">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-5 col-12">
+        <div class="d-flex h-100 align-items-center">
+
+          <div>
+              <h2 style="font-size:45px" class=" h1">What We Do</h2>
+              <p class="text-muted text-justify">SeedAR is one of the very first AR-based marketing solution providers in Iran. We are able to create marker-based, marker-less, and location-based augmented realities.</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-7 col-12">
+          
+        <div class="row features bg-white shadow p-3 mb-3 rounded">
+          <div class="col-lg-2 col-12">
+            <div class="icon mb-4 text-center"><i class="fa fa-map-marker"></i></div>
+          </div>
+          <div class="col-10">
+              <h4 class="h4">Marker-based</h4>
+              <p style="font-size:14px;" class="text-muted text-justify">Pointing a camera at a specific trigger point (AR marker), the user can see and interact with life-like digital overlays and multimedia content.</p>
+          </div>
+        </div>
+        <div class="row features bg-white shadow p-3 mb-3 rounded">
+          <div class="col-lg-2 col-12">
+            <div class="icon mb-4 text-center"><i class="fa fa-map"></i></div>
+          </div>
+          <div class="col-10">
+              <h4 class="h4">Markerless</h4>
+              <p style="font-size:14px;" class="text-muted text-justify">3D content overlaid right onto the user's surroundings. The most sophisticated form of augmented reality, markerless AR is based on the simultaneous localization and mapping (SLAM) technology.</p>
+          </div>
+        </div>
+        <div class="row features bg-white shadow p-3 mb-3 rounded">
+          <div class="col-lg-2 col-12">
+            <div class="icon mb-4 text-center"><i class="fa fa-map-signs"></i></div>
+          </div>
+          <div class="col-10">
+              <h4 class="h4">Location-based</h4>
+              <p style="font-size:14px;" class="text-muted text-justify">With aid of GPS, entering a particular location will trigger augmented 2D/3D animation, sound or video.</p>
+          </div>
+        </div>
+           
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+          <img class="" style="max-width: 100%" src="{{ .Site.BaseURL }}/images/covers/screensample.jpeg">
+      </div>
+    </div>
+  </div>
+</section>
+              
+{{ $team := .Site.Data.team }}
+<section id="team" class="text-center py-5">
+  <div class="container">
+    <h2 class="pt-5 h2">{{ $team.title }}</h2>
+    <p class="text-muted pb-5">{{ $team.description }}</p>
+
+    <div class="members row justify-content-md-center mt-1">
+      {{ range $team.members }}
+        <div class="col-12 col-lg-3 col-md-3 col-sm-3 mb-4">
+          <img class="mb-3 teamAvatar shadow" src="{{.Site.BaseURL}}images/team/{{.avatar }}" alt="{{ .name }}">
+          <h4 class="h4">{{ .name }}</h4>
+          <div class="text-muted">{{ .description }}</div>
+          <div class="text-center mt-3">
+            {{ range $key, $value := .social }}
+            <a data-toggle="tooltip" title="{{ $key }}" href="{{ $value }}" target="_blank" class="ml-2 btn btn-sm btn-filled btn-{{$key}}"><i class="fab fa-{{ $key }}"></i></a>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ $contact := .Site.Data.contact }}
+
+<section id="contact" class="contact mt-5 p-3 p-lg-5 p-md-5">
+  <div class="container">
+
+    <h2 class="h2 my-5 text-center">Contact</h2>
+
+    <form action="https://formspree.io/info@seedar.dev" method="POST">
+      <div class="row justify-content-md-center">
+      
+        <div class="col-12 col-lg-4 col-md-4 rounded text-dark p-5" style="font-size: 18px">
+          {{ if $contact.address }}
+          <div class="mb-3">
+            <div class="text-uppercase text-muted">
+              Address
+            </div>
+            <div>{{ $contact.address }}</div>
+          </div>
+          {{ end }}
+          {{ if $contact.email }}
+          <div class="mb-3">
+            <div class="text-uppercase text-muted">Email</div>
+            <div>{{ $contact.email }}</div>
+           </div>
+          {{ end }}
+          {{ if $contact.phone }}
+          <div class="mb-3">
+            <div class="text-uppercase text-muted">Phone</div>
+            <div>{{ $contact.phone }}</div>
+          </div>
+          {{ end }}
+        </div>
+        <div class="col-12 col-lg-6 col-md-6">
+            <div class="row">
+              <div class="col-12 col-lg-6 col-md-6">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" name="Name" class="form-control" placeholder="Name">
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-md-6">
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" name="Email" class="form-control" placeholder="Email">
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <div class="form-group">
+                  <label>Message</label>
+                  <textarea placeholder="Message" name="Message" rows="5" class="form-control"></textarea>
+                </div>
+              </div>
+  
+              <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+  
+            </div>
+          </div>
+      </div>
+    </form>
+
+  </div>  
+</section>
+

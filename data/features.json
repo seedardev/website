@@ -1,0 +1,18 @@
+{
+  "title" : "Our Services",
+  "description" : "SeedAR is one of the very first AR-based marketing solution providers in Iran. We are able to create marker-based, marker-less, and location-based augmented realities.",
+  "content" : [
+    {
+      "icon" : "map-marker",
+      "title" : "Marker-based"
+    },
+    {
+      "icon" : "map",
+      "title" : "Marker-less"
+    },
+    {
+      "icon" : "map-signs",
+      "title" : "Location-based"
+    }
+  ]
+}

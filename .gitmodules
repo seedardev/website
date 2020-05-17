@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/seedardev/seedardev.github.io.git
+	branch = master
