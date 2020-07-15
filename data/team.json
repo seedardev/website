@@ -19,32 +19,8 @@
       }
     },
     {
-      "name" : "Mohammad Amin",
-      "description" : "Project Manager",
-      "avatar" : "mohammadamin.jpeg",
-      "social" : {
-        "linkedin" : "https://www.linkedin.com/in/mohammad-amin-zarifi-778362110"
-      }
-    },
-    {
-      "name" : "Emad",
-      "description" : "Art Director",
-      "avatar" : "emad.jpeg",
-      "social" : {
-        "linkedin" : "https://www.linkedin.com/in/emadameri"
-      }
-    },
-    {
-      "name" : "Melika",
-      "description" : "Product Manager",
-      "avatar" : "melika.jpeg",
-      "social" : {
-        "linkedin" : "https://www.linkedin.com/in/melika-m-a90093142"
-      }
-    },
-    {
       "name" : "Ali",
-      "description" : "R&D Officer",
+      "description" : "Art Director",
       "avatar" : "ali.jpeg",
       "social" : {
         "linkedin" : "https://www.linkedin.com/in/ali-nafezarefi-9b080564"
